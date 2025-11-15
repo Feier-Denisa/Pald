@@ -56,7 +56,7 @@ class PaldApp(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.title("pald • Plant Identifier")
+        self.title("Pald • Plant Identifier")
         self.geometry("950x600")
         self.minsize(850, 500)
 
@@ -75,8 +75,8 @@ class PaldApp(tk.Tk):
         style = ttk.Style(self)
         style.theme_use("clam")
 
-        accent = "#16a34a"
-        accent_hover = "#15803d"
+        accent = "#e32b0a"
+        accent_hover = "#8e1e0b"
 
         style.configure(
             "Accent.TButton",
@@ -123,7 +123,7 @@ class PaldApp(tk.Tk):
 
         title_label = tk.Label(
             header,
-            text="pald • Plant Identifier",
+            text="PALD • Plant Identifier",
             bg="#f3f4f6",
             fg="#111827",
             font=("Segoe UI", 16, "bold"),
@@ -132,7 +132,7 @@ class PaldApp(tk.Tk):
 
         subtitle_label = tk.Label(
             header,
-            text="Fă o poză sau alege una din galerie pentru a afla ce plantă este 🌿",
+            text="A picture away from knowing all about your plant",
             bg="#f3f4f6",
             fg="#4b5563",
             font=("Segoe UI", 9),
@@ -275,7 +275,7 @@ class PaldApp(tk.Tk):
 
         self.status_label = tk.Label(
             status_bar,
-            text="Folosește fișierul .env cu PLANT_ID_API_KEY pentru cheia de API.",
+            # text="Folosește fișierul .env cu PLANT_ID_API_KEY pentru cheia de API.",
             bg="#f3f4f6",
             fg="#6b7280",
             font=("Segoe UI", 8),
